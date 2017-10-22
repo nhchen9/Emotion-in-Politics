@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Emotion in Politics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<style>
+		  sup {
+				font-size: 10px
+		  }
+			.statsource{
+				font-size:10px
+			}
+			.graph{
+				width: 50%;
+
+			}
+			.graph img{
+				width: 100%;
+			}
+		 	.year{
+				text-align: center;
+			}
+		  .content3{
+				text-align: center;
+			}
+			.content4{
+				text-align: left;
+			}
+			.introstrong{
+				font-size: 24px;
+			}
+			.introimage{
+				width:100%;
+			}
+			#motivation{
+				width: 60%;
+			}
+			.content2{
+				width: 60%;
+			}
+			.image2{
+				width:40%;
+				padding-top: 4%;
+				padding-left:10%;
+				padding-bottom: 3%;
+			}
+
+			.image2 img{
+
+				width:100%;
+			}
+			.tg  {border-collapse:collapse;border-spacing:0; margin-bottom:20px;}
+			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+			.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+			.tg .tg-yw4l{vertical-align:top}
+
+		</style>
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Words are powerful.</h1></br>
+							<p class="major intro">  Skilled orators craft speech into precise argumentation, diction can build power or undermine credibility, and debate can influence thought and action.
+								<br><br>And, especially in a democracy, speeches can direct the course of entire nations - <strong> for better or worse</strong>
+							</p>
+
+						</div>
+						<div class="image">
+							<img class = "introimage"src="images/banner.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onload-image-fade-in onload-content-fade-right" id="first">
+						<div class="content2 content" id="motivation">
+							<h2>Motivation</h2>
+							<p>According to former United States Attorney Anton Valukas, one of the most pressing societal issues the US faces is a lack of substantive political dialogue.
+								Political debates between constituents and candidates alike have grown increasingly adversarial in recent years, and often devolve into personal attacks rather than an attempt to address real world concerns.
+								Valukas maintains that one of the White House's most important roles is to foster healthy, constructive political discussion - and it's not doing a great job.
+								In most recent presidential election, <b>presidential candidates</b> from both sides, potential leaders of the free world, habitually resorted to grade school tactics of name-calling and slander.
+								<br>
+							 </p>
+						</div>
+						<div class="image">
+							<img src="images/spotlight01.jpg" alt="" />
+
+						</div>
+					</section>
+					<section class="spotlight style1 orient-left content-align-left image-position-center onload-image-fade-in onload-content-fade-right" id="first">
+
+						<div class="content2 content" id="motivation">
+							<p>This trend of irrational pathos in the place of logos - actual problem solving - detracts from the government's effectiveness solving key societal issues of justice,
+							opportunity, and individual rights.  We've seen this time and time again in studying mass incarceration.  Hatred and insecurity among poor whites feeds the flames of racism,
+							segregation and violence in the New Jim Crow.  Irrational thirst for vengeance ruins communities through unjust imprisonment and execution in Just Mercy. Fear pushes people to imprison children,
+							locking demographics into perpetual continuities of inequality in the school to prison pipeline.
+							<br><br>
+							For these reasons, I decided to investigate the effects of emotion in politics.
+							 </p>
+						</div>
+						<div class="image">
+
+							<img src ="images/1sanders.jpg"/>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onload-image-fade-in onload-content-fade-right">
+						<div class="content content3">
+							<h2>My Method</h2>
+							<p>In order to conduct any sort of analysis for this study, I needed a tool to calculate polarity of emotion in speech, and to pick a set of consistent speeches to analyze.
+						  I employed a machine learning sentiment analyzer from the Natural Language Toolkit, and ran it on each sentence in the last 15 presidential inauguration speeches<sup>4</sup> and took the average.  Inauguration speeches
+							were chosen because they all serve a similar purpose, implying a helpful standardization of expected diction.  The machine learning sentiment analyzer provides an index of sentiment polarity
+							 - basically how intense of an emotion was used in the text.  I then plotted my findings against 4 year change in RGDP, annual change in homicide rate, and 4 year change in unemployment, and performed linear regression with basic statistical analysis on each correlation.</p>
+
+							 <div class="disclaimer"> Note that this is a research study, <strong>not </strong>an experiment.  These findings are not intended to establish a causal relationship,
+							 it merely inspects correlations and extrapolates potential explanations based on historical evidence.</div>
+							<ul class="actions vertical">
+
+							</ul>
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left">
+						<div class="content">
+							<h2>The Data</h2>
+							<table class="tg">
+								<col class = "year" width="100">
+							  <tr>
+
+							    <th class="tg-yw4l" ><strong>Year</strong></th>
+							    <th class="tg-yw4l"><strong>Emotion in Inaugural Address</strong></th>
+							    <th class="tg-yw4l"><strong>4 Year RGDP Change <sup>1</sup></strong></th>
+							    <th class="tg-yw4l"><strong>4 Year Unemployment Rate Change <sup>2</sup></strong> (%)</th>
+							    <th class="tg-yw4l"><strong>1 Year Homicide Rate Change <sup>3</sup></strong> (%)</th>
+							  </tr>
+
+							  <tr>
+							    <td class="tg-yw4l">2013</td>
+							    <td class="tg-yw4l">0.178</td>
+							    <td class="tg-yw4l">0.071638</td>
+							    <td class="tg-yw4l">-8</td>
+							    <td class="tg-yw4l">0</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">2009</td>
+							    <td class="tg-yw4l">0.211</td>
+							    <td class="tg-yw4l">0.088552</td>
+							    <td class="tg-yw4l">0.2</td>
+							    <td class="tg-yw4l">-0.2</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">2005</td>
+							    <td class="tg-yw4l">0.437</td>
+							    <td class="tg-yw4l">0.002776</td>
+							    <td class="tg-yw4l">2.5</td>
+							    <td class="tg-yw4l">0.2</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">2001</td>
+							    <td class="tg-yw4l">0.283</td>
+							    <td class="tg-yw4l">0.115518</td>
+							    <td class="tg-yw4l">1.1</td>
+							    <td class="tg-yw4l">0</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1997</td>
+							    <td class="tg-yw4l">0.285</td>
+							    <td class="tg-yw4l">0.118017</td>
+							    <td class="tg-yw4l">-1.1</td>
+							    <td class="tg-yw4l">-0.5</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1993</td>
+							    <td class="tg-yw4l">0.21</td>
+							    <td class="tg-yw4l">0.145406</td>
+							    <td class="tg-yw4l">-2</td>
+							    <td class="tg-yw4l">-0.5</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1989</td>
+							    <td class="tg-yw4l">0.331</td>
+							    <td class="tg-yw4l">0.086639</td>
+							    <td class="tg-yw4l">1.9</td>
+							    <td class="tg-yw4l">0.7</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1985</td>
+							    <td class="tg-yw4l">0.283</td>
+							    <td class="tg-yw4l">0.130286</td>
+							    <td class="tg-yw4l">-1.9</td>
+							    <td class="tg-yw4l">0.7</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1981</td>
+							    <td class="tg-yw4l">0.203</td>
+							    <td class="tg-yw4l">0.199737</td>
+							    <td class="tg-yw4l">-0.2</td>
+							    <td class="tg-yw4l">-0.7</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1977</td>
+							    <td class="tg-yw4l">0.362</td>
+							    <td class="tg-yw4l">0.09688</td>
+							    <td class="tg-yw4l">0</td>
+							    <td class="tg-yw4l">0.2</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1973</td>
+							    <td class="tg-yw4l">0.46</td>
+							    <td class="tg-yw4l">0.043636</td>
+							    <td class="tg-yw4l">2.6</td>
+							    <td class="tg-yw4l">0.4</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1969</td>
+							    <td class="tg-yw4l">0.385</td>
+							    <td class="tg-yw4l">0.102662</td>
+							    <td class="tg-yw4l">1.5</td>
+							    <td class="tg-yw4l">0.6</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1965</td>
+							    <td class="tg-yw4l">0.134</td>
+							    <td class="tg-yw4l">0.131356</td>
+							    <td class="tg-yw4l">-1.5</td>
+							    <td class="tg-yw4l">0</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1961</td>
+							    <td class="tg-yw4l">0.258</td>
+							    <td class="tg-yw4l">0.166922</td>
+							    <td class="tg-yw4l">-1.7</td>
+							    <td class="tg-yw4l">-0.2</td>
+							  </tr>
+							  <tr>
+							    <td class="tg-yw4l">1957</td>
+							    <td class="tg-yw4l">0.396</td>
+							    <td class="tg-yw4l">0.131098</td>
+							    <td class="tg-yw4l">2.4</td>
+							    <td class="tg-yw4l">0.8</td>
+							 </tr>
+						 </table>
+						 <div>
+							 <ul style="list-style:none;" class = "statsource">
+								 <li class = "sources">1: http://www.multpl.com/us-real-gdp-growth-rate/table/by-quarter</li>
+								 <li class = "sources">2: http://www.multpl.com/unemployment/table</li>
+								 <li class = "sources">3: https://www.infoplease.com/us/crime/homicide-rate-1950-2014</li>
+								 <li class = "sources">4: http://avalon.law.yale.edu/subject_menus/inaug.asp</li>
+
+							 </ul>
+					</section>
+
+				<!-- Five -->
+					<section class="wrapper style1 align-center">
+<br>
+
+						<!-- Gallery -->
+							<div class= "image graph">
+								<img src="images/rgdp.png"/>
+							</div>
+							<div class= "image graph">
+								<img src="images/unemployment.png"/>
+							</div>
+							<div class= "image graph">
+								<img src="images/homicide.png"/>
+							</div>
+					</section>
+
+				<!-- Six -->
+				<section class="spotlight style1 orient-left content-align-left image-position-center onload-image-fade-in onload-content-fade-right">
+					<div class="content content4">
+						<h2>Analysis</h2>
+						<p>The data demonstrates a strong relationship between change in unemployment rates and emotional intensity, and a moderate relationship between RGDP and homicide rates with emotional intensity.
+							I hypothesize that this relation occurs because, as Attorney Valukas suggested, the White House sets an <strong>example</strong> for political discourse throughout the nation.
+							Much like toddlers emulate observed behaviors from their peers and parents, US citizens learn from the president and his aides.  An excessively emotional and subjective
+							approach to problem solving ultimately serves as a distraction, and leads to personal investment in ideally objective positions.</p>
+
+					</div>
+				</section>
+				<!-- Seven -->
+				<section class="spotlight style1 orient-left content-align-left image-position-center onload-image-fade-in onload-content-fade-right">
+					<div class="content content4">
+						<h2>Solution</h2>
+						<p>Democracy's greatest merit lies within its founding ideology: a government for the people, by the people.  At the end of the day,
+						individual citizens have the power to influence policy through discussion, debate, and voting.  I encourage you to use logic and rationality
+						when discussing governmental policy and political candidates because it sets a positive example for both your peers and representatives.
+						When voting, consider the merits of actual policies each candidate sponsors, rather than just getting swept up by rhetoric.  In doing so,
+						we can help guide our government to improve the world.
+						</p>
+
+					</div>
+				</section>
+					<section class="wrapper style1 align-center">
+						<div class="inner medium">
+							<h4>Special thanks to Mr. Anton Valukas for his expertise, insight, and inspiration.</h4>
+
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+
+							<p>&copy; Nicholas Chen, 2017</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
