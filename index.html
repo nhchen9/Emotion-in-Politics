@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+
 	<body>
 		<style>
 		  sup {
@@ -29,6 +30,14 @@
 			}
 		  .content3{
 				text-align: center;
+			}
+			#mobilewarn{
+				text-align: center;
+				display:none;
+				position: absolute;
+				top: 30%;
+				left: 10%;
+				right: 10%;
 			}
 			.content4{
 				text-align: left;
@@ -63,6 +72,8 @@
 
 		</style>
 		<!-- Wrapper -->
+
+		<div id = "mobilewarn"> <h2>Check the site out on a full-size device.  It'll look a lot nicer!</h2></div>
 			<div id="wrapper" class="divided">
 
 				<!-- One -->
@@ -117,7 +128,7 @@
 						<div class="content content3">
 							<h2>My Method</h2>
 							<p>In order to conduct any sort of analysis for this study, I needed a tool to calculate polarity of emotion in speech, and to pick a set of consistent speeches to analyze.
-						  I employed a machine learning sentiment analyzer from the Natural Language Toolkit, and ran it on each sentence in the last 15 presidential inauguration speeches<sup>4</sup> and took the average.  2017 was excluded 
+						  I employed a machine learning sentiment analyzer from the Natural Language Toolkit, and ran it on each sentence in the last 15 presidential inauguration speeches<sup>4</sup> and took the average.  2017 was excluded
 							because necessary data won't be available until 2021 (but Trump's emotional intensity was over .5, making it the most emotional of any speech I analyzed).  Inauguration speeches
 							were chosen because they all serve a similar purpose, implying a helpful standardization of expected diction.  The machine learning sentiment analyzer provides an index of sentiment polarity
 							 - basically how intense of an emotion was used in the text.  I then plotted my findings against 4 year change in RGDP, annual change in homicide rate, and 4 year change in unemployment, and performed linear regression with basic statistical analysis on each correlation.</p>
